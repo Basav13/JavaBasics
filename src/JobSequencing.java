@@ -18,8 +18,12 @@ class MyComp implements Comparator<Job>
 	}
 }
 
-class Solve
-{
+//class Solve
+//{
+//	
+//	
+//}
+public class JobSequencing {
 	int[] jobScheduling(Job arr[] , int n)
 	{
 		Arrays.sort(arr,new MyComp());
@@ -58,9 +62,6 @@ class Solve
 		
 	}
 	
-}
-public class JobSequencing {
-	
 	public static void main(String[] args) {
 		Job[] arr = new Job[4];
         arr[0] = new Job(1, 4, 20);
@@ -68,7 +69,7 @@ public class JobSequencing {
         arr[2] = new Job(3, 2, 40);
         arr[3] = new Job(4, 2, 30);
         
-        Solve ob = new Solve();
+        JobSequencing ob = new JobSequencing();
         int[] res = ob.jobScheduling(arr,4);
         System.out.println(res[0]+" "+res[1]);
 
