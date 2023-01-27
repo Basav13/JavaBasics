@@ -5,7 +5,7 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		
-		/*int[] arr = new int[5];
+		int[] arr = new int[5];
 		Scanner scn = new Scanner(System.in);
 		for(int i = 0 ; i < 5 ; i++)
 		{
@@ -20,7 +20,7 @@ public class HelloWorld {
 		{
 			ar.add(i+1);
 		}
-		System.out.println(ar);*/
+		System.out.println(ar);
 		StringBuffer sb=new StringBuffer("Hello");
 		sb.append("Java");
 		System.out.println(sb);
