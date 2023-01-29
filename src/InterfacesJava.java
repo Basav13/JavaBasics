@@ -3,6 +3,10 @@ interface TwoDimensional
 {
 	public double area();
 	public double perimeter();
+	default int fun()
+	{
+		return 1;
+	}
 }
 
 interface ThreeDimensional 
