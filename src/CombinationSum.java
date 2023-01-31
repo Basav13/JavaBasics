@@ -3,10 +3,12 @@ class Recursion
 {
 	void rec(int i , int[] candidates , int target , List<List<Integer>> ans , List<Integer> temp)
 	{
+		//ArrayList<Stack<Integer>> ls = new ArrayList<Stack<Integer>>();
+		
 		if(i == candidates.length)
 		{
 			if(target == 0)
-				ans.add(new ArrayList<>(temp));
+				ans.add(new ArrayList<>(temp)); 
 			return;
 		}
 		if(candidates[i] <= target)
