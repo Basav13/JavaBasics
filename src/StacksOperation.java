@@ -11,7 +11,7 @@ public class StacksOperation {
 		System.out.println("Popped item : "+st.pop());
 		System.out.println(st);
 		System.out.println(st.search("Last"));
-
+		//ArrayDequeue faster than stack , single threaded.
 	}
 
 }
