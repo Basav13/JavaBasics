@@ -1,42 +1,60 @@
 class A
 {
 	
-	A()
+	
+	void func()
 	{
 		System.out.println("A");
 	}
 	
-	A(int x)
+	protected Number take()
 	{
-		System.out.println("nsc");
+		return 4;
 	}
 }
 
 class B extends A
 {
-	B()
+
+	void func()
 	{
 		System.out.println("B");
 	}
-	B(int x)
+	protected Number take()
 	{
-		
-		System.out.println("bjj");
+		return 4;
 	}
 }
 
 class C extends B
 {
-	C(int y)
+	
+	void func()
 	{
-		System.out.println("super constructor");
+		System.out.println("C");
 	}
+}
+
+class D extends C
+{
+	void func()
+	{
+		System.out.println("D");
+	}
+	void func2()
+	{
+		func();
+		((C)this).func();
+		((B)this).func();
+		((A)this).func();
+	}
+	
 }
 public class TestSuper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		C c = new C(3);
+		new D().func2();
 	}
 
 }
